@@ -13,6 +13,8 @@
 		D0871B9819B5F72B00EC747B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0871B9619B5F72B00EC747B /* Main.storyboard */; };
 		D0871B9A19B5F72B00EC747B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0871B9919B5F72B00EC747B /* Images.xcassets */; };
 		D0871BA619B5F72C00EC747B /* TouchTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0871BA519B5F72C00EC747B /* TouchTrackerTests.m */; };
+		D0871BB119B5F74700EC747B /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = D0871BB019B5F74700EC747B /* Line.m */; };
+		D0871BB419B5F88600EC747B /* TouchDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0871BB319B5F88600EC747B /* TouchDrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		D0871B9F19B5F72C00EC747B /* TouchTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0871BA419B5F72C00EC747B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0871BA519B5F72C00EC747B /* TouchTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchTrackerTests.m; sourceTree = "<group>"; };
+		D0871BAF19B5F74700EC747B /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		D0871BB019B5F74700EC747B /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		D0871BB219B5F88600EC747B /* TouchDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchDrawView.h; sourceTree = "<group>"; };
+		D0871BB319B5F88600EC747B /* TouchDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchDrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				D0871B9619B5F72B00EC747B /* Main.storyboard */,
 				D0871B9919B5F72B00EC747B /* Images.xcassets */,
 				D0871B8C19B5F72B00EC747B /* Supporting Files */,
+				D0871BAF19B5F74700EC747B /* Line.h */,
+				D0871BB019B5F74700EC747B /* Line.m */,
+				D0871BB219B5F88600EC747B /* TouchDrawView.h */,
+				D0871BB319B5F88600EC747B /* TouchDrawView.m */,
 			);
 			path = TouchTracker;
 			sourceTree = "<group>";
@@ -216,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0871B9519B5F72B00EC747B /* ViewController.m in Sources */,
+				D0871BB119B5F74700EC747B /* Line.m in Sources */,
+				D0871BB419B5F88600EC747B /* TouchDrawView.m in Sources */,
 				D0871B9219B5F72B00EC747B /* AppDelegate.m in Sources */,
 				D0871B8F19B5F72B00EC747B /* main.m in Sources */,
 			);
@@ -333,8 +345,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TouchTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -344,8 +358,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TouchTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
